@@ -1,0 +1,17 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: randomapp
+spec:
+  rules:
+    - host: random.test.local  # Cambia esto al dominio que deseas usar
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: randomapp
+                port:
+                  number: 5000
