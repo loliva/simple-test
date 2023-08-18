@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: randomapp
-        image: lolivag/randomapp:v1.1
+        image: lolivag/randomapp:v1.2
         ports:
         - containerPort: 5000

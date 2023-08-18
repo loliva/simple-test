@@ -4,8 +4,9 @@ kind: Ingress
 metadata:
   name: randomapp
 spec:
+  ingressClassName: nginx
   rules:
-    - host: random.test.local  # Cambia esto al dominio que deseas usar
+    - host: random.local
       http:
         paths:
           - path: /
