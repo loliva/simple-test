@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app
+  name: randomapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flask-app
+      app: randomapp
   template:
     metadata:
       labels:
-        app: flask-app
+        app: randomapp
     spec:
       containers:
-      - name: flask-app
-        image: tu_usuario/tu_flask_app:latest
+      - name: randomapp
+        image: lolivag/randomapp:v1
         ports:
         - containerPort: 5000
