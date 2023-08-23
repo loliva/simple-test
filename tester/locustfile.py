@@ -16,6 +16,3 @@ class RandomUser(HttpUser):
         url = os.environ.get('URL', 'localhost')
         headers = {"Host": url}
         self.client.get('/random_string', headers=headers)
-
-
-
