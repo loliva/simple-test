@@ -11,7 +11,7 @@ COPY app.py .
 RUN pip install flask
 
 # Expone el puerto donde se ejecuta la API
-EXPOSE 5000
+EXPOSE 5050
 
 # Comando para iniciar el servidor
 CMD ["python", "app.py"]
